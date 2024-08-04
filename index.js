@@ -35,19 +35,19 @@ function displaycart() {
         check = true;
         buttonclick(quantity, index);
       }
-      console.log(tot);
+    
       if (cart1.children.length === 0) {
         container2[1].style.display = "flex";
         cart2.style.display = "none";        
       } else {
         container2[1].style.display = "none";
         cart2.style.display = "flex";
-        let sum = 0;
-        for (const value of tot) {
-          sum += value;
-        }
-        document.getElementById("total").innerText = `${sum}`;
-      }
+     }
+     let sum = 0;
+     for (const value of tot) {
+       sum += value;
+     }
+     document.getElementById("total").innerText = `${sum}`;
     });
   });
 }
