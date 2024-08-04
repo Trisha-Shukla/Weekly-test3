@@ -9,6 +9,7 @@
         align-items: center;
         gap:20px;
         height: 100vh;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     h1{
         text-align: center;
