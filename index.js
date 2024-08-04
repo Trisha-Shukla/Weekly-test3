@@ -12,8 +12,6 @@ let check = true;
 function displaycart() {
   document.querySelectorAll(".products").forEach(function (ele, index) {
     ele.innerHTML = `<span>${Products[index].name}</span> <span>${Products[index].price}</span> <div><button class="button-">-</button><span id="${Products[index].id}">0</span> <button class="button+">+</button></div>`;
-  });
-  document.querySelectorAll(".products").forEach(function (ele, index) {
     ele.addEventListener("click", function (e) {
       let value = `${Products[index].id}`;
       let quantity = parseInt(document.getElementById(value).innerText);
